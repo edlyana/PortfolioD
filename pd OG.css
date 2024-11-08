@@ -1,0 +1,396 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    /* background-color: #FCF6E7; */
+    color: #000000;
+    text-align: center;
+    padding: 1.5em 0;
+    font-family: 'Inter', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+section {
+    padding: 2em;
+}
+.container {
+    width: 90%;
+    max-width: 2000px;
+    margin: auto;
+}
+.container2 {
+    width: 83%;
+    max-width: 2000px;
+    margin: auto;
+}
+.project-card {
+    background-color: #e1cfa2;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+.contact-card{
+  background-color: aqua;
+}
+footer {
+    /* background-color: #FCF6E7; */
+    color: #000000;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* .img-circle {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 350px;
+    height: 200px;
+} */
+
+.square-container {
+    width: 150px; /* Set the width */
+    height: 150px; /* Set the height to match for a square shape */
+    background-color: #DCFE23; /* Set the background color */
+    justify-content: center;
+}
+
+.align-itemsHome {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.button {
+border: none;
+/* color: #e1cfa2; */
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 8px;
+}
+
+.buttonResume {
+background-color: #f8f5ee; 
+color: black; 
+border: 2px solid #fcb161;
+font-family: 'Inter', sans-serif;
+}
+
+.buttonResume:hover {
+background-color: #f38c1f;
+color: #ffffff;
+}
+
+/* .name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+} */
+
+/* .spacing-img {
+    padding: 90px;
+    margin: 70px;
+} */
+
+svg {
+    height: 33px;
+    width: 33px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+}
+
+.containerAboutMe {
+    width: 83%;
+    max-width: 2000px;
+    margin: auto;
+    padding: 10px;
+    /* margin: 25px; */
+    font-size: 19px;
+}
+
+
+/* Main Container */
+.main-container {
+    display: flex;
+    gap: 20px; /* Spacing between the two containers */
+    padding: 50px;
+    /* background-color: #fdf6e3; Light background */
+}
+
+/* Left Container: Intro */
+.intro-container {
+    flex: 1;
+    padding: 20px;
+    /* background-color: #ffffff; */
+    /* border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Right Container: Skills */
+.skills-container {
+    flex: 1;
+    padding: 20px;
+    /* background-color: #ffffff; */
+    /* border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Heading Styling */
+.intro-container h2, .skills-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Skills List Styling */
+.skills-grid {
+    display: grid;
+    padding: 5%;
+    grid-template-columns: repeat(3, 1fr); /* 3 icons per row */
+    gap: 15px;
+}
+
+.skill-item {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+
+/* PROJECTS DISPLAY TOGGLE BUTTONS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+} */
+
+.containerToggle {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center; /* not required also can */
+    margin: auto;
+}
+
+/* h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+} */
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f38c1f;
+    color: white;
+}
+
+.toggle-button.active {
+    background-color: #b66a19;
+}
+
+.projects-container {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f9f4e8;
+    border: 1px solid #c794d5;
+    border-radius: 8px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card p {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.project-card.hidden {
+    display: none;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* LAYOUT OF HOME PAGE */
+.containerHome {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    /* min-height: 100vh; */
+    min-height: 78vh;
+}
+.text {
+    text-align: left;
+}
+  
+  .text p {
+    margin: 5px 0;
+    font-size: 2.5rem;
+  }
+  
+  .text strong {
+    font-weight: bold;
+  }
+  
+  .subtext {
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .circleImg {
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    max-width:100%;
+    height:auto;
+    width:375px;
+    height:375px;
+    border-radius:50%;
+    object-fit:cover;
+  }
+
+  .contactIcons {
+    position: absolute;
+    right: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  .contactIcon {
+    width: 10px;
+    height: 20px;
+    /* background-color: #d3d3d3; */
+  }
+  
+  @media (max-width: 600px) {
+    .containerHome {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .circle {
+      margin-top: 10px;
+    }
+  
+    .contactIcons {
+      right: 0;
+    }
+  }
+
+
+
+/* ABOUT ME TEXT FORMATTING */
+.aboutMe {
+    display: flex;
+    padding: 2.5%;
+    margin: 3.5%;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* PFP and NAVBAR */
+header nav {
+    display: flex;
+    padding: 2.5%;
+}
+header img {
+    width: 7.9%;
+    height: 7.9%;
+}
+
+
+/* COLOURFUL SHAPES */
+.shapesBkg {
+    /* border: 1px solid black; */
+    background: url(https://i.pinimg.com/736x/2e/95/e1/2e95e17537ef87126d5c14d420d6563e.jpg);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    padding: 15px;
+    background-position: top left;
+}
+
+.shapesBkg2 {
+    /* border: 1px solid black; */
+    background: url(https://th.bing.com/th/id/R.0c8634920982bb4756597b2fdda1881c?rik=t72w2VaNFPSrQQ&riu=http%3a%2f%2fclipart-library.com%2fimg%2f2008893.png&ehk=t0NZr4hkNlLcCBR1N9LEd9VhcRVWPBhi%2bl%2fU7SC%2bErs%3d&risl=&pid=ImgRaw&r=0);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    padding: 15px;
+    background-position: top left;
+}
+
+.shapesBkg3 {
+    /* border: 1px solid black; */
+    background: url(https://th.bing.com/th/id/R.772275d20a4609e05536df187c976297?rik=CKnCDbqV%2bOBB1Q&riu=http%3a%2f%2fplastics-online.co.uk%2fwp-content%2fuploads%2f2018%2f07%2fF6901vibrantGreen-300x300.jpg&ehk=nSgrib0mwScYXqO%2faYChRhiaO0hOMpNsF38kVBCiPfQ%3d&risl=&pid=ImgRaw&r=0);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    padding: 15px;
+    background-position: bottom right;
+}
+
+
+p {
+    font-family: 'Inter', sans-serif;
+}

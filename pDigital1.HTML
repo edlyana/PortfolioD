@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 10;
+            padding: 20px;
+            width: 15%; /*changed the value here from 0*/
+            /* background-color: #FCF6E7; */
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 16px 16px;
+            text-decoration: none;
+            font-size: 1.15rem;
+        }
+
+        li a.active {
+            background-color: #f38c1f;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #fcb161;
+            color: white;
+        }
+
+/* Main Content */
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .content section {
+            margin-bottom: 40px;
+            /* opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease; */
+        }
+
+        /* .content section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        } */
+
+        .content p {
+            /* font-size: 1.5rem; */
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .content .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        svg {
+            height: 33px;
+            width: 33px;
+        }
+
+        .shapesBkg1 {
+            background: url(https://www.colorhexa.com/fe6f5e.png);
+            background-size: 70px 70px;
+            background-repeat: no-repeat;
+            padding: 15px;
+            background-position: top left;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 9px;
+        }
+
+        h2 {
+            font-family: 'Pacifico', serif;
+            font-size: 31px;
+        }
+
+        img {
+            height:500px;
+            width:750px;
+        }
+    </style>
+</head>
+<body style="background-color: #FCF6E7;">
+    <ul>
+        <li><a href="#context">About Case Scenario</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#challenges">Challenges</a></li>
+        <li><a href="#results">Results</a></li>
+    </ul>
+
+    <div class="content">
+        <a href="pd.HTML"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></a>
+        <h1 class="shapesBkg1">VR Escape Room</h1>
+
+        <section id="context">
+            <h2>About</h2>
+            <p>For my Year 2, Semester 2 graded assignment, I am developing a VR game in Unity. The project requires creating a game in any genre, using a Game Design Document to plan pre-production and production milestones. My work includes designing the game loop, creating storyboards, defining gameplay scope, selecting an art style, and studying player profiles. This project incorporates design, coding, and marketing skills to develop and promote the game, with a requirement to include at least three interactive puzzles for players to solve.</p>
+            <div><img src="images/pDigital1.png"></div>
+        </section>
+
+        <section id="goals">
+            <h2>Goals</h2>
+            <p>My goal was to create an inclusive game experience accessible to a wide range of players. To support wheelchair users, I implemented a teleportation feature, and I reduced field motion to minimize discomfort, like dizziness or nausea. Aiming for an 'E' (Everyone) rating, I incorporated a playful cat theme and used colors to set an inviting, fun atmosphere. Finally, I wanted to challenge players with engaging puzzles that progressively increase in difficulty as they are solved.</p>
+            <div><img src="images/room2PD1.png"></div>
+        </section>
+
+        <section id="process">
+            <h2>Process</h2>
+            <p>In pre-production, I defined the game’s theme, genre, and target audience. Using Adobe Photoshop Panorama to sketch room elements in 360° helped me visualize and refine each component for a cohesive design. During production, I structured the Unity scene using basic shapes and tools, then added relevant assets from the Unity Asset Store to enhance the environment’s look and feel. I applied C# code to enable player interactions with objects for puzzle-solving. Additional touches, including colors, textures, effects, and audio, enriched the game’s atmosphere. In the final phase, I debugged the first playable version and tested the game using Meta headset equipment.</p>
+        </section>
+
+        <section id="challenges">
+            <h2>Challenges</h2>
+            <p>One major challenge was balancing the creation of a VR game's first playable version with my busy schedule of CCA, studies, and family commitments. To manage my time effectively, I prioritized tasks and set small, achievable milestones, allowing steady progress without overwhelming myself.</p>
+            <p>Another challenge was enhancing the scene’s aesthetics by adding effects and using Unity's pipeline tools. Initially, understanding and implementing these techniques was difficult, but I overcame this by watching tutorial videos and seeking feedback from my lecturer. With guidance, I was able to meet and even exceed project expectations, refining the visual quality of the game to create a more immersive experience.</p>
+            <div><img src="images/milestonePD1.png"></div>
+        </section>
+
+        <section id="results">
+            <h2>Results</h2>
+            <p>The result was a fully functional first playable titled The Cat Escapes, inspired by the anime The Cat Returns. In the game, players find themselves trapped in a castle room within the Cat Kingdom. To escape back to the human world, they must solve a series of puzzles to locate the 'Cat Key' and unlock the way out.</p>
+            <div>
+                <video width="750" height="500" controls>
+                    <source src="videos\23016282 VR recording.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
