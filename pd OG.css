@@ -326,20 +326,20 @@ svg {
     /* background-color: #d3d3d3; */
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 1200px) {
     .containerHome {
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
   
-    .circle {
+    /* .circle {
       margin-top: 10px;
     }
   
     .contactIcons {
       right: 0;
-    }
+    } */
   }
 
 
@@ -397,4 +397,75 @@ header img {
 
 p {
     font-family: 'Inter', sans-serif;
+}
+
+/* Service-Learning and Competition section */
+
+.containerV {
+    width: 100%;
+    height: auto;
+    /* background-color:#DCFE23;  */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.description{
+    background-color: #9eaac9;
+    box-sizing: border-box;
+    width: 80%;
+    height: 250px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    align-content: center;
+    justify-self: center;
+    font-size: 19px;
+}
+
+.descriptionContainer {
+    /* flex: 1; */
+    padding: 10px;
+    width: 40%;
+    height: 650px;
+    /* background-color: #DCFE23; */
+    margin: 20px;
+    /* box-sizing: border-box; */
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .descriptionContainer {
+        width:40%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .containerV{
+        width:100%;
+    }
+
+    .descriptionContainer {
+        width:80%;
+    }
+}
+
+/* Automated Slideshow */
+
+.slideshow-container {
+    position: relative;
+    max-width: 65%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
 }
