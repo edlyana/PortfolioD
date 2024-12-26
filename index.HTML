@@ -47,76 +47,7 @@
         </div>
     </section>
 
-<!-- Slideshows for Competitions and Volunteering -->
 
-    <div class="containerV">
-        <div class="descriptionContainer">
-            <h2 style="text-align: center;">Competitions</h2>
-            <div class="description">
-                <p>DSTA BrainHack 2024</p>
-                <p>Huawei Tech4CITY 2024</p>
-                <p>MUIS ICCOS 2024</p>
-            </div>
-
-            <!-- Competition Slideshow -->
-            <div class="slideshow-container">
-                <div class="mySlides mySlides1">
-                    <img src="/images/competitionP1.jpg" alt="Slide 1">
-                </div>
-                <div class="mySlides mySlides1">
-                    <img src="/images/competitionP2.jpg" alt="Slide 2">
-                </div>
-                <div class="mySlides mySlides1">
-                    <img src="/images/competitionP3.jpg" alt="Slide 3">
-                </div>
-            </div>
-        </div>
-
-        <div class="descriptionContainer">
-            <h2 style="text-align: center;">Volunteering</h2>
-            <div class="description">
-                <p>Python Workshop 2024</p>
-                <p>LittleBits Workshop 2024</p>
-                <p>Open House Student Ambassador 2024</p>
-            </div>
-
-            <!-- Volunteering Slideshow -->
-            <div class="slideshow-container">
-                <div class="mySlides mySlides2">
-                    <img src="/images/volunteeringP1.png" alt="Slide 1">
-                </div>
-                <div class="mySlides mySlides2">
-                    <img src="/images/volunteeringP2.jpg" alt="Slide 2">
-                </div>
-                <div class="mySlides mySlides2">
-                    <img src="/images/volunteeringP3.jpg" alt="Slide 3">
-                </div>
-            </div>
-        </div> 
-    </div>
-
-    <!-- Automated Slideshow, changes every 4 seconds -->
-    <script>
-        let slideIndex = [0, 0];
-        let slideId = ["mySlides1", "mySlides2"];
-
-        // Function to show slides
-        function showSlides() {
-            for (let i = 0; i < slideId.length; i++) {
-                let slides = document.getElementsByClassName(slideId[i]);
-                for (let j = 0; j < slides.length; j++) {
-                    slides[j].style.display = "none";
-                }
-                slideIndex[i]++;
-                if (slideIndex[i] > slides.length) { slideIndex[i] = 1; }
-                slides[slideIndex[i] - 1].style.display = "block";
-            }
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-
-        // Initialize slideshows
-        showSlides();
-    </script>
 
     <!-- About Me Section -->
     <section id="about" class="container">
@@ -127,7 +58,7 @@
                 <p class="aboutMe">
                     A self-driven Information Technology student actively engaged in hackathons, with a strong foundation in leading hybrid teams, seeking an internship as a Software Developer. Eager to apply skills in Python, React, Figma, and Design Thinking within an Agile environment. 
                 </p>
-                <button class="button buttonResume">Resume</button>
+                <a href="/downloadFiles/Resume.pdf" download="Resume.pdf" class="button buttonResume">Download Resume</a>
             </div>
         
             <!-- Right Container: Skills List -->
@@ -270,6 +201,92 @@
             </a>
         </div>
     </section> -->
+    
+
+    <!-- Slideshows for Competitions and Volunteering -->
+
+    <div class="containerV">
+        <div class="descriptionContainer">
+            <h2 style="text-align: center;">Competitions</h2>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p><span>&#127775;</span>DSTA BrainHack 2024</p>
+                        <p><span>&#127775;</span>Huawei Tech4CITY 2024</p>
+                        <p><span>&#127775;</span>MUIS ICCOS 2024</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Through various competitions, I enhanced my technical skills, strengthened my collaboration and communication skills within hybrid teams, and built confidence in public speaking.</p> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competition Slideshow -->
+            <div class="slideshow-container">
+                <div class="mySlides mySlides1">
+                    <img src="/images/competitionP1.jpg" alt="Slide 1">
+                </div>
+                <div class="mySlides mySlides1">
+                    <img src="/images/competitionP2.jpg" alt="Slide 2">
+                </div>
+                <div class="mySlides mySlides1">
+                    <img src="/images/competitionP3.jpg" alt="Slide 3">
+                </div>
+            </div>
+        </div>
+
+        <div class="descriptionContainer">
+            <h2 style="text-align: center;">Volunteering</h2>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p><span>&#127775;</span>Python Workshop 2024</p>
+                        <p><span>&#127775;</span>LittleBits Workshop 2024</p>
+                        <p><span>&#127775;</span>Open House Student Ambassador 2024</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Service-Learning projects helped me build leadership, communication, and adaptability while inspiring me to serve others with empathy and resilience.</p> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volunteering Slideshow -->
+            <div class="slideshow-container">
+                <div class="mySlides mySlides2">
+                    <img src="/images/volunteeringP1.png" alt="Slide 1">
+                </div>
+                <div class="mySlides mySlides2">
+                    <img src="/images/volunteeringP2.jpg" alt="Slide 2">
+                </div>
+                <div class="mySlides mySlides2">
+                    <img src="/images/volunteeringP3.jpg" alt="Slide 3">
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Automated Slideshow, changes every 4 seconds -->
+    <script>
+        let slideIndex = [0, 0];
+        let slideId = ["mySlides1", "mySlides2"];
+
+        // Function to show slides
+        function showSlides() {
+            for (let i = 0; i < slideId.length; i++) {
+                let slides = document.getElementsByClassName(slideId[i]);
+                for (let j = 0; j < slides.length; j++) {
+                    slides[j].style.display = "none";
+                }
+                slideIndex[i]++;
+                if (slideIndex[i] > slides.length) { slideIndex[i] = 1; }
+                slides[slideIndex[i] - 1].style.display = "block";
+            }
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        // Initialize slideshows
+        showSlides();
+    </script>
 
     <!-- Footer Section -->
     <footer>
@@ -281,3 +298,4 @@
 
 
 <!-- class="img-fluid" -->
+
