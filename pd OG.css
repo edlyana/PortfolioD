@@ -9,6 +9,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: linear-gradient(141deg, #FCF6E7 0%, #e1d2ce 51%, #d7c4bd 75%);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    cursor: none;
 }
 header {
     /* background-color: #FCF6E7; */
@@ -32,14 +36,18 @@ section {
     padding: 2em;
 }
 .container {
+    padding-top: 10%;
+    padding-bottom: 15%;
     width: 90%;
     max-width: 2000px;
     margin: auto;
 }
 .container2 {
-    width: 83%;
+    width: 90%;
     max-width: 2000px;
     margin: auto;
+    padding: 10px;
+    /* text-align: center; */
 }
 .project-card {
     background-color: #e1cfa2;
@@ -125,8 +133,14 @@ svg {
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     margin: 15px;
+}
+
+.social-icons a:hover {
+    background-color: #DCFE23;
+    padding: 2.5px;
+    border-radius: 50%;
 }
 
 .containerAboutMe {
@@ -273,6 +287,7 @@ svg {
 /* LAYOUT OF HOME PAGE */
 .containerHome {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
     font-family: 'Inter', sans-serif;
@@ -284,14 +299,14 @@ svg {
     text-align: left;
 }
   
-  .text p {
+.text p {
     margin: 5px 0;
     font-size: 2.5rem;
-  }
+}
   
-  .text strong {
+.text strong {
     font-weight: bold;
-  }
+}
   
   .subtext {
     font-size: 1rem;
@@ -544,3 +559,50 @@ img {
     padding: 5%;
     margin: 70;
   }
+
+
+/* cursor */
+.cursor{
+    z-index: 999;
+    position: fixed;
+    background: #E54712;
+    opacity: 0.2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 28px #E54712, 0 0 68px #E54712;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* .cursor:before{
+    content:'';
+    position: absolute;
+    background:#e3a808;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-38%, - 38%);
+    border-radius: 50%;
+} */
+
+/* slide in */
+.animationSlideIn{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0px);
+    }
+}
