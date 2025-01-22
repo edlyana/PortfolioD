@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     font-family: 'Inter', sans-serif;
@@ -6,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: linear-gradient(141deg, #FCF6E7 0%, #e1d2ce 51%, #d7c4bd 75%);
 }
 header {
     /* background-color: #FCF6E7; */
@@ -402,8 +405,8 @@ p {
 /* Service-Learning and Competition section */
 
 .containerV {
-    width: 100%;
-    height: auto;
+    width: 50;
+    /* height: auto; */
     /* background-color:#DCFE23;  */
     display:flex;
     flex-direction: row;
@@ -411,7 +414,7 @@ p {
     flex-flow: wrap;
 }
 
-.description{
+/* .description{
     background-color: #9eaac9;
     box-sizing: border-box;
     width: 80%;
@@ -422,16 +425,15 @@ p {
     align-content: center;
     justify-self: center;
     font-size: 19px;
-}
+} */
 
 .descriptionContainer {
     /* flex: 1; */
     padding: 10px;
     width: 40%;
-    height: 650px;
-    /* background-color: #DCFE23; */
+    height: 60%;
+    /* background-color: #2352fe; */
     margin: 20px;
-    /* box-sizing: border-box; */
     font-size: 20px;
 }
 
@@ -458,17 +460,29 @@ p {
     position: relative;
     max-width: 65%;
     margin: auto;
+    /* background-color: #c794d5; */
+    padding: 20px;
+    overflow: hidden;
 }
 
 .mySlides {
+    width: 100%;
+    height: 500px;
     display: none;
     text-align: center;
 }
 
 img {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 30px;
 }
+
+/* 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  } */
 
 
 /* Hover Flip Cards for Competitions and Volunteering */
@@ -494,7 +508,7 @@ img {
   }
   
   .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
   }
   
   .flip-card-front, .flip-card-back {
@@ -515,7 +529,7 @@ img {
   .flip-card-back {
     background-color: #F38C1F;
     color: white;
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     align-content: center;
     padding:10px;
   }
@@ -523,4 +537,10 @@ img {
   .flip-card-front p span {
     font-size:20px;
     padding-right: 2px;
+  }
+
+
+  footer{
+    padding: 5%;
+    margin: 70;
   }
