@@ -82,7 +82,7 @@
         }
 
         img {
-            height:500px;
+            height:250px;
             width:750px;
         }
 
@@ -122,31 +122,39 @@
 
         <section id="context">
             <h2>About</h2>
-            <p>For this project, I developed a prototype mobile application using React Native, titled Finance Manager App. The app focuses on helping users manage their income and expenses, promoting better financial habits. With the rising cost of living, effective money management is more important than ever, and this app aims to empower users to track their finances and make informed decisions.</p>
-            <div><img src="images/pDigital1.png"></div>
+            <p>I was tasked with creating a single-page web application using React to help travelers 
+                keep track of their packed items during their holidays.</p>
         </section>
 
         <section id="goals">
             <h2>Goals</h2>
-            <p>The app’s primary goal was to be user-friendly, intuitive, and to provide insights into spending habits to encourage smarter financial decisions.</p>
-            <div><img src="images/room2PD1.png"></div>
+            <p>My goal was to develop a minimalist, user-friendly application that simplifies the packing process for users.</p>
+            <div><img src="images/pDigital4a.png"></div>
         </section>
 
         <section id="process">
             <h2>Process</h2>
-            <p>To start, I designed a low-fidelity prototype using Figma to map out the app’s layout and flow. This gave me a clear vision of the design direction. For the app’s structure, I used a SectionList component in React Native, as it accommodates multiple datasets and simplifies data retrieval during development.</p>
+            <p>I began by adding form elements, including a quantity dropdown, a text input field, and an add button. Each of these elements was connected to useState hooks with event handlers to ensure state updates.</p>
+            <p>Next, I displayed the user-added items in a list format using the .map() function. Within this list, I included a checkbox to mark items as packed and a delete button (X) for removing individual items. A conditional style was applied to visually indicate packed items by striking through their descriptions.</p>
+
+            <img style="width:750px; height:200px;" src="/images/pDigital4b.png">
+
+            <p>I implemented a "delete all" function to clear the list entirely and created a status feature that calculates the percentage of items packed using a simple formula. A ternary operator was used to toggle between personalized messages when all items are packed.</p>
+            
+            <img style="width:805px; height:150px;" src="/images/pDigital4c.png">
+
+            <p>For deployment, I committed my code to GitHub regularly and used Vercel to deploy my application for the first time.</p>
         </section>
 
         <section id="challenges">
             <h2>Challenges</h2>
-            <p>One of the challenges I faced was designing an interface that balances functionality and simplicity while keeping the app visually appealing. Additionally, learning how to efficiently implement the SectionList feature in React Native required extra research and troubleshooting. Everything went well as I was able to deliver the final prototype on time.</p>
-            <div><img src="images/milestonePD1.png"></div>
+            <p>One challenge I faced was properly styling the packed items dynamically. Initially, I struggled to get the textDecoration: "line-through" style to apply only when the checkbox was ticked. By carefully reviewing how state updates work and ensuring the packed property of each item was toggled correctly, I managed to fix this issue.</p>
+            <p>Another challenge I faced was deploying the app for the first time using Vercel. Watching tutorials and experimenting with the deployment process helped me successfully publish the application.</p>
         </section>
 
         <section id="results">
             <h2>Results</h2>
-            <p>The results was a fully functional prototype named Budget App. In the app, users can add, edit, and delete income and expense entries directly. The design features a clean, intuitive interface with sections for different expense categories, providing a clear breakdown of spending. I chose a color scheme of purple and brown to create a warm and engaging visual theme.</p>
-            <p>This project honed my skills in design and development, allowing me to create a practical tool that addresses an everyday challenge while delivering a seamless user experience.</p>
+            <p>The final product is a fully functional travel list web app, deployed for users to track their packing efficiently and enjoy stress-free travel.</p>
             
             <p>Check out my live website powered by <a href="https://travel-list-app-starter-main-kappa.vercel.app/">Vercel</a>, and the 
                 link to my <a href="https://github.com/edlyana/travel-list-app-starter-main">GitHub repository</a>.</p>
