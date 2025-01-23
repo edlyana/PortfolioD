@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React</title>
+    <title>React Native</title>
     <style>
         ul {
             list-style-type: none;
@@ -102,6 +102,15 @@
             height:500px;
             width:750px;
         }
+
+        .stickyHeader {
+            position: sticky;
+            top: 0;
+            padding: 10px 16px;
+            background: #e2dcbd;
+            color: #000000;
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body style="background-color: #FCF6E7;">
@@ -114,45 +123,50 @@
     </ul>
 
     <div class="content">
-        <h1>
-            <a href="index.HTML#projects">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
-                        <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
-                    </svg>
-                </span>
-            </a>
-            Pizza Website
-        </h1>
+        <div class="stickyHeader">
+            <h1>
+                <a href="index.HTML#projects">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                        </svg>
+                    </span>
+                </a>
+                Animal Quiz App
+            </h1>
+        </div>
 
         <section id="context">
             <h2>About</h2>
-            <p>For my Year 2, Semester 2 graded assignment, I am developing a VR game in Unity. The project requires creating a game in any genre, using a Game Design Document to plan pre-production and production milestones. My work includes designing the game loop, creating storyboards, defining gameplay scope, selecting an art style, and studying player profiles. This project incorporates design, coding, and marketing skills to develop and promote the game, with a requirement to include at least three interactive puzzles for players to solve.</p>
+            <p>I developed Animal Quiz App, an interactive game designed for children. The game challenges users to match animals using a dropdown menu, encouraging learning through play in a simple, engaging format.</p>
             <div><img src="images/pDigital1.png"></div>
         </section>
 
         <section id="goals">
             <h2>Goals</h2>
-            <p>My goal was to create an inclusive game experience accessible to a wide range of players. To support wheelchair users, I implemented a teleportation feature, and I reduced field motion to minimize discomfort, like dizziness or nausea. Aiming for an 'E' (Everyone) rating, I incorporated a playful cat theme and used colors to set an inviting, fun atmosphere. Finally, I wanted to challenge players with engaging puzzles that progressively increase in difficulty as they are solved.</p>
+            <p>The primary goal was to create an app that is fun, educational, and easy for children to use. To appeal to the target audience, I incorporated bright and playful colors like green to match the animal theme.</p>
             <div><img src="images/room2PD1.png"></div>
         </section>
 
         <section id="process">
             <h2>Process</h2>
-            <p>In pre-production, I defined the game’s theme, genre, and target audience. Using Adobe Photoshop Panorama to sketch room elements in 360° helped me visualize and refine each component for a cohesive design. During production, I structured the Unity scene using basic shapes and tools, then added relevant assets from the Unity Asset Store to enhance the environment’s look and feel. I applied C# code to enable player interactions with objects for puzzle-solving. Additional touches, including colors, textures, effects, and audio, enriched the game’s atmosphere. In the final phase, I debugged the first playable version and tested the game using Meta headset equipment.</p>
+            <p>I used high-quality animal images to make the game visually appealing and enjoyable. Different options were also included in the dropdown menu to ensure variety and prevent repetition, keeping the experience fresh and engaging for young users.</p>
         </section>
 
         <section id="challenges">
             <h2>Challenges</h2>
-            <p>One major challenge was balancing the creation of a VR game's first playable version with my busy schedule of CCA, studies, and family commitments. To manage my time effectively, I prioritized tasks and set small, achievable milestones, allowing steady progress without overwhelming myself.</p>
-            <p>Another challenge was enhancing the scene’s aesthetics by adding effects and using Unity's pipeline tools. Initially, understanding and implementing these techniques was difficult, but I overcame this by watching tutorial videos and seeking feedback from my lecturer. With guidance, I was able to meet and even exceed project expectations, refining the visual quality of the game to create a more immersive experience.</p>
+            <p>One of the challenges was designing an intuitive interface suitable for young children while ensuring it remained functional and visually appealing.</p>
+            <p>Additionally, implementing dynamic dropdown options required careful consideration to maintain variety without overwhelming the users.</p>
             <div><img src="images/milestonePD1.png"></div>
         </section>
 
         <section id="results">
             <h2>Results</h2>
-            <p>The result was a fully functional first playable titled The Cat Escapes, inspired by the anime The Cat Returns. In the game, players find themselves trapped in a castle room within the Cat Kingdom. To escape back to the human world, they must solve a series of puzzles to locate the 'Cat Key' and unlock the way out.</p>
+            <p>The result was a functional and engaging quiz game that children can enjoy. The app successfully blends fun with learning, making it an excellent tool for entertainment and education.</p>
+            <p>If given the opportunity to improve the app, I would add cool facts about the animals to make the game more educational and enriching for young users.</p>
+            <p>Github Repo <a href="text.com">here</a></p>
             <div>
+                <p>Watch the demo of the Animal Game App:</p>
                 <video width="750" height="500" controls>
                     <source src="videos\23016282 VR recording.mp4" type="video/mp4">
                     Your browser does not support the video tag.

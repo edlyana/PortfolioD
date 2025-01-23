@@ -103,6 +103,15 @@
             height:550px;
             width:550px;
         }
+
+        .stickyHeader {
+            position: sticky;
+            top: 0;
+            padding: 10px 16px;
+            background: #e2dcbd;
+            color: #000000;
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body style="background-color: #FCF6E7;">
@@ -115,16 +124,19 @@
     </ul>
 
     <div class="content">
-        <h1>
-            <a href="index.HTML#projects">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
-                        <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
-                    </svg>
-                </span>
-            </a>
-            Instagram Grid Post
-        </h1>
+
+        <div class="stickyHeader">
+            <h1>
+                <a href="index.HTML#projects">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                        </svg>
+                    </span>
+                </a>
+                Instagram Grid Post
+            </h1>
+        </div>
 
         <section id="context">
             <h2>About</h2>
