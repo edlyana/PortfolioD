@@ -112,6 +112,38 @@
             color: #000000;
             opacity: 0.9;
         }
+
+        /* DROPDOWN MENU */
+        .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+        background-color: #ccc;
+        }
+
+        .panel {
+        padding-top: 5px;
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        }
+
+        .panel img {
+            height: 250px;
+            width: 550px;
+        }
     </style>
 </head>
 <body style="background-color: #FCF6E7;">
@@ -158,9 +190,50 @@
             <div>
                 <img style="height:450px; width:700px" src="/images/pDesign5c.png" alt="Design Project 5">
             </div>
-            <p>Next, I sketched up some potential designs for the name card:</p>
-            
+            <p>Next, I sketched up potential designs for the name card (toggle through the dropdown below!):</p>
+
+            <button class="accordion">Sketch 1</button>
+            <div class="panel">
+                <img src="images/pDesign5_1.png" alt="Sketch 1">
+                <p>I tried to achieve balance with the back of the card by arranging my details from top right to center left and bottom right we have the logo 
+                    again. I also made use the spacing between the components to categorize the contact details away from the main name and designation for a more organized look.</p>
+            </div>
+
+            <button class="accordion">Sketch 2</button>
+            <div class="panel">
+                <img src="images/pDesign5_2.png" alt="Sketch 1">
+                <p>I have included an element of programming in the card, which is the brackets (at the front and back of the card), to represent the beginning and end 
+                    of the card. This is to show continuity that there is still more to see behind the card. I have placed the name at the top to show emphasis that this card belongs to me.</p>
+            </div>
+
+            <button class="accordion">Sketch 3</button>
+            <div class="panel">
+                <img src="images/pDesign5_3.png" alt="Sketch 1">
+                <p>I introduced a new shape (circle), to add an element of fun into the name card. The principle of similarity is achieved by the placement of the circles, overall forming the 
+                    edges of a square. The other two circles are continued to the back of the card. I have compacted all details below each other in sequence to keep it simple and 
+                    arranged the more important details at the top and so on.</p>
+            </div>
+
+            <p>Overall, I chose Sketch 3 because it has more personality and better represents my style.</p>
+
         </section>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
 
         <section id="challenges">
             <h2>Challenges</h2>

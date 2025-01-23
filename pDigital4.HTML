@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 10;
+            padding: 20px;
+            width: 15%; /*changed the value here from 0*/
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 16px 16px;
+            text-decoration: none;
+            font-size: 1.15rem;
+        }
+
+        li a.active {
+            background-color: #f38c1f;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #fcb161;
+            color: white;
+        }
+
+/* Main Content */
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .content section {
+            margin-bottom: 40px;
+        }
+
+        .content p {
+            /* font-size: 1.5rem; */
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        svg {
+            height: 33px;
+            width: 33px;
+        }
+
+        /* .shapesBkg1 {
+            background: url(https://www.colorhexa.com/fe6f5e.png);
+            background-size: 70px 70px;
+            background-repeat: no-repeat;
+            padding: 15px;
+            background-position: top left;
+        } */
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 9px;
+        }
+
+        h2 {
+            font-family: 'Pacifico', serif;
+            font-size: 31px;
+        }
+
+        img {
+            height:500px;
+            width:750px;
+        }
+
+        .stickyHeader {
+            position: sticky;
+            top: 0;
+            padding: 10px 16px;
+            background: #e2dcbd;
+            color: #000000;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body style="background-color: #FCF6E7;">
+    <ul>
+        <li><a href="#context">About Case Scenario</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#challenges">Challenges</a></li>
+        <li><a href="#results">Results</a></li>
+    </ul>
+
+    <div class="content">
+
+        <div class="stickyHeader">
+            <h1>
+                <a href="index.HTML#projects">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                        </svg>
+                    </span>
+                </a>
+                Travel List Web App
+            </h1>
+        </div>
+
+        <section id="context">
+            <h2>About</h2>
+            <p>For this project, I developed a prototype mobile application using React Native, titled Finance Manager App. The app focuses on helping users manage their income and expenses, promoting better financial habits. With the rising cost of living, effective money management is more important than ever, and this app aims to empower users to track their finances and make informed decisions.</p>
+            <div><img src="images/pDigital1.png"></div>
+        </section>
+
+        <section id="goals">
+            <h2>Goals</h2>
+            <p>The app’s primary goal was to be user-friendly, intuitive, and to provide insights into spending habits to encourage smarter financial decisions.</p>
+            <div><img src="images/room2PD1.png"></div>
+        </section>
+
+        <section id="process">
+            <h2>Process</h2>
+            <p>To start, I designed a low-fidelity prototype using Figma to map out the app’s layout and flow. This gave me a clear vision of the design direction. For the app’s structure, I used a SectionList component in React Native, as it accommodates multiple datasets and simplifies data retrieval during development.</p>
+        </section>
+
+        <section id="challenges">
+            <h2>Challenges</h2>
+            <p>One of the challenges I faced was designing an interface that balances functionality and simplicity while keeping the app visually appealing. Additionally, learning how to efficiently implement the SectionList feature in React Native required extra research and troubleshooting. Everything went well as I was able to deliver the final prototype on time.</p>
+            <div><img src="images/milestonePD1.png"></div>
+        </section>
+
+        <section id="results">
+            <h2>Results</h2>
+            <p>The results was a fully functional prototype named Budget App. In the app, users can add, edit, and delete income and expense entries directly. The design features a clean, intuitive interface with sections for different expense categories, providing a clear breakdown of spending. I chose a color scheme of purple and brown to create a warm and engaging visual theme.</p>
+            <p>This project honed my skills in design and development, allowing me to create a practical tool that addresses an everyday challenge while delivering a seamless user experience.</p>
+            
+            <p>Check out my live website powered by <a href="https://travel-list-app-starter-main-kappa.vercel.app/">Vercel</a>, and the 
+                link to my <a href="https://github.com/edlyana/travel-list-app-starter-main">GitHub repository</a>.</p>
+            
+            <p>Watch the demo of the Travel List Website:</p>
+            <div>
+                <video width="750" height="500" controls>
+                    <source src="videos/pDigital4_demo_vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
