@@ -94,9 +94,56 @@
             color: #000000;
             opacity: 0.9;
         }
+
+        /* cursor */
+        .cursor{
+            z-index: 999;
+            position: fixed;
+            background: #E54712;
+            opacity: 0.25;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            pointer-events: none;
+            box-shadow: 0 0 28px #E54712, 0 0 68px #E54712;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        body{
+            cursor: none;
+        }
     </style>
 </head>
 <body style="background-color: #FCF6E7;">
+
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+
+        document.addEventListener("mousemove", (e) => {
+            let x = e.clientX;
+            let y = e.clientY;
+
+            cursor.style.top = y + "px";
+            cursor.style.left = x + "px";
+            cursor.style.display = "block";
+
+            function mouseStopped(){
+                cursor.style.display = "none";
+            }
+            clearTimeout(timeout);
+            timeout = setTimeout(mouseStopped, 1000);
+        });
+
+        document.addEventListener("mouseout", () => {
+            cursor.style.display = "none";
+        });
+    </script>
+
     <ul>
         <li><a href="#context">About Case Scenario</a></li>
         <li><a href="#goals">Goals</a></li>

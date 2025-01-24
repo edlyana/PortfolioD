@@ -258,7 +258,7 @@ svg {
 
 .project-card {
     background-color: #f9f4e8;
-    border: 1px solid #c794d5;
+    border: 1px solid #f38c1f;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -280,7 +280,7 @@ svg {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 
@@ -570,7 +570,7 @@ img {
     z-index: 999;
     position: fixed;
     background: #E54712;
-    opacity: 0.3;
+    opacity: 0.25;
     width: 50px;
     height: 50px;
     border-radius: 50%;
