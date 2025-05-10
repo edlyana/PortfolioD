@@ -4,128 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma</title>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 10;
-            padding: 20px;
-            width: 15%;
-            /* background-color: #FCF6E7; */
-            position: fixed;
-            height: 100%;
-            overflow: auto;
-        }
-
-        li a {
-            display: block;
-            color: #000;
-            padding: 16px 16px;
-            text-decoration: none;
-            font-size: 1.15rem;
-        }
-
-        li a.active {
-            background-color: #f38c1f;
-            color: white;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #fcb161;
-            color: white;
-        }
-
-/* Main Content */
-        .content {
-            flex-grow: 1;
-            padding: 40px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .content section {
-            margin-bottom: 40px;
-            /* opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease; */
-        }
-
-        /* .content section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        } */
-
-        .content p {
-            /* font-size: 1.5rem; */
-            font-family: 'Inter', sans-serif;
-            font-size: 20px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            padding-left: 4%;
-        }
-
-        section img{
-            padding-left: 4%;
-        }
-
-        svg {
-            height: 33px;
-            width: 33px;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            font-size: 9px;
-        }
-
-        h2 {
-            font-family: 'Pacifico', serif;
-            font-size: 31px;
-        }
-
-        img {
-            align-content: center;
-            height:550px;
-            width:550px;
-        }
-
-        .stickyHeader {
-            position: sticky;
-            top: 0;
-            padding: 10px 16px;
-            background: #e2dcbd;
-            color: #000000;
-            opacity: 0.9;
-        }
-
-        /* cursor */
-        .cursor{
-            z-index: 1000;
-            position: fixed;
-            background: #E54712;
-            opacity: 0.25;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            pointer-events: none;
-            box-shadow: 0 0 28px #E54712, 0 0 68px #E54712;
-            transform: translate(-50%, -50%);
-            display: none;
-        }
-
-        body{
-            cursor: none;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="projectStyles.css">
 </head>
-<body style="background-color: #FCF6E7;">
+<body>
+    <div class="container">
+        <ul class="item">
+            <li><a href="#context">About Case Scenario</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#results">Results</a></li>
+        </ul>
 
-    <!-- CURSOR -->
+        <div class="item">
+            <div class="stickyHeader">
+                <a href="index.HTML#projects" class="backLink">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                        </svg>
+                        <span class="label">StyleShop UI Kit</span>
+                    </span>
+                </a>
+            </div>
+
+            <hr styles="padding:20px">
+
+            <section id="context">
+                <h2>About</h2>
+                <p>I was approached by StyleShop to design a UI Kit for their mobile furniture shop application. The app’s goal is to attract users by offering a seamless browsing experience while showcasing aesthetically pleasing furniture for their homes.</p>
+            </section>
+
+            <section id="goals">
+                <h2>Goals</h2>
+                <p>The objective was to create a comprehensive UI Kit with a variety of elements that could potentially be implemented in the final application.</p>
+                <div>
+                    <img style="height:500px; width:750px" src="/images/pDesign4a.png" alt="Design Project 4">
+                </div>
+            </section>
+
+            <section id="process">
+                <h2>Process</h2>
+                <p>I began by designing the foundational elements of the kit, including the color palette, fonts, and common icons to maintain consistency 
+                    throughout the app. For forms and data elements, I sized buttons differently based on the specific actions of each page. 
+                    Checkboxes and text fields were also included for user input.</p>
+                <p>For grid layout components, I enhanced the navigation bar to reflect the company’s quirky and aesthetic vibe. I used 
+                    round buttons for a playful feel, adding shadows and a white backdrop to create a pop-up effect when users navigate between pages. For media and 
+                    interactive elements, I incorporated sliders and dropdown menus, 
+                    which are essential features in modern applications.</p>
+            </section>
+
+            <section id="challenges">
+                <h2>Challenges</h2>
+                <p>One challenge was deciding whether to use a shadow-border on the home page for displaying the four furniture categories. Ultimately, 
+                    I chose the shadow-border as it provided a more dynamic and visually appealing design 
+                    compared to a plain background, complementing the automatically changing displays.</p>
+                <div>
+                    <img style="height:555px; width:700px" src="/images/pDesign4b.png" alt="Design Project 2">
+                </div>
+            </section>
+
+            <section id="results">
+                <h2>Results</h2>
+                <p>After completing the UI Kit, I utilized most of its elements to design a functional prototype of the app's main pages. The result was a cohesive and visually engaging design that aligned with the company’s brand identity and user needs.</p>
+                <p>View my figma High-fidelity prototype and UI Kit <a href="https://www.figma.com/design/SRG3roHJrkOph7lPywK2jW/L10_ShopifyApp_CA3?node-id=47-167&t=bXbcIxcUiOSnACDu-1">here</a>.</p>
+                <div>
+                    <p>Watch my high-fidelity demo below:</p>
+                    <video width="750" height="500" controls>
+                        <source src="videos/pDesign4_demo_vid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </div>
+    </div>
+
     <div class="cursor"></div>
 
     <script type="text/javascript">
@@ -152,75 +105,5 @@
         });
     </script>
 
-    <ul>
-        <li><a href="#context">About Case Scenario</a></li>
-        <li><a href="#goals">Goals</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#challenges">Challenges</a></li>
-        <li><a href="#results">Results</a></li>
-    </ul>
-
-    <div class="content">
-
-        <div class="stickyHeader">
-            <h1>
-                <a href="index.HTML#projects">
-                    <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
-                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
-                        </svg>
-                    </span>
-                </a>
-                StyleShop UI Kit
-            </h1>
-        </div>
-
-        <section id="context">
-            <h2>About</h2>
-            <p>I was approached by StyleShop to design a UI Kit for their mobile furniture shop application. The app’s goal is to attract users by offering a seamless browsing experience while showcasing aesthetically pleasing furniture for their homes.</p>
-        </section>
-
-        <section id="goals">
-            <h2>Goals</h2>
-            <p>The objective was to create a comprehensive UI Kit with a variety of elements that could potentially be implemented in the final application.</p>
-            <div>
-                <img style="height:500px; width:750px" src="/images/pDesign4a.png" alt="Design Project 4">
-            </div>
-        </section>
-
-        <section id="process">
-            <h2>Process</h2>
-            <p>I began by designing the foundational elements of the kit, including the color palette, fonts, and common icons to maintain consistency 
-                throughout the app. For forms and data elements, I sized buttons differently based on the specific actions of each page. 
-                Checkboxes and text fields were also included for user input.</p>
-            <p>For grid layout components, I enhanced the navigation bar to reflect the company’s quirky and aesthetic vibe. I used 
-                round buttons for a playful feel, adding shadows and a white backdrop to create a pop-up effect when users navigate between pages. For media and 
-                interactive elements, I incorporated sliders and dropdown menus, 
-                which are essential features in modern applications.</p>
-        </section>
-
-        <section id="challenges">
-            <h2>Challenges</h2>
-            <p>One challenge was deciding whether to use a shadow-border on the home page for displaying the four furniture categories. Ultimately, 
-                I chose the shadow-border as it provided a more dynamic and visually appealing design 
-                compared to a plain background, complementing the automatically changing displays.</p>
-            <div>
-                <img style="height:555px; width:700px" src="/images/pDesign4b.png" alt="Design Project 2">
-            </div>
-        </section>
-
-        <section id="results">
-            <h2>Results</h2>
-            <p>After completing the UI Kit, I utilized most of its elements to design a functional prototype of the app's main pages. The result was a cohesive and visually engaging design that aligned with the company’s brand identity and user needs.</p>
-            <p>View my figma High-fidelity prototype and UI Kit <a href="https://www.figma.com/design/SRG3roHJrkOph7lPywK2jW/L10_ShopifyApp_CA3?node-id=47-167&t=bXbcIxcUiOSnACDu-1">here</a>.</p>
-            <div>
-                <p>Watch my high-fidelity demo below:</p>
-                <video width="750" height="500" controls>
-                    <source src="videos/pDesign4_demo_vid.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </section>
-    </div>
 </body>
 </html>

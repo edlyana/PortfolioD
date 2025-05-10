@@ -4,105 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adobe Illustrator</title>
+    <link rel="stylesheet" type="text/css" href="projectStyles.css">
     <style>
-        ul {
-            list-style-type: none;
-            margin: 10;
-            padding: 20px;
-            width: 15%;
-            /* background-color: #FCF6E7; */
-            position: fixed;
-            height: 100%;
-            overflow: auto;
-        }
-
-        li a {
-            display: block;
-            color: #000;
-            padding: 16px 16px;
-            text-decoration: none;
-            font-size: 1.15rem;
-        }
-
-        li a.active {
-            background-color: #f38c1f;
-            color: white;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #fcb161;
-            color: white;
-        }
-
-/* Main Content */
-        .content {
-            flex-grow: 1;
-            padding: 40px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .content section {
-            margin-bottom: 40px;
-            /* opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease; */
-        }
-
-        /* .content section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        } */
-
-        .content p {
-            /* font-size: 1.5rem; */
-            font-family: 'Inter', sans-serif;
-            font-size: 20px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            padding-left: 4%;
-        }
-
-        section img{
-            padding-left: 4%;
-        }
-
-        svg {
-            height: 33px;
-            width: 33px;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            font-size: 9px;
-        }
-
-        h2 {
-            font-family: 'Pacifico', serif;
-            font-size: 31px;
-        }
-
-        img {
-            align-content: center;
-            height:550px;
-            width:550px;
-        }
-
-        .stickyHeader {
-            position: sticky;
-            top: 0;
-            padding: 10px 16px;
-            background: #e2dcbd;
-            color: #000000;
-            opacity: 0.9;
-        }
-
-        /* DROPDOWN MENU */
         .accordion {
         background-color: #e6e4d9;
         color: #444;
@@ -123,7 +26,6 @@
         .panel {
         padding-top: 5px;
         padding: 0 18px;
-        /* background-color: white; */
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
@@ -133,30 +35,119 @@
             height: 250px;
             width: 550px;
         }
-
-        /* cursor */
-        .cursor{
-            z-index: 1000;
-            position: fixed;
-            background: #E54712;
-            opacity: 0.25;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            pointer-events: none;
-            box-shadow: 0 0 28px #E54712, 0 0 68px #E54712;
-            transform: translate(-50%, -50%);
-            display: none;
-        }
-
-        body{
-            cursor: none;
-        }
     </style>
 </head>
-<body style="background-color: #FCF6E7;">
+<body>
+    <div class="container">
+        <ul class="item">
+            <li><a href="#context">About Case Scenario</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#results">Results</a></li>
+        </ul>
 
-    <!-- CURSOR -->
+        <div class="item">
+            <div class="stickyHeader">
+                <a href="index.HTML#projects" class="backLink">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                        </svg>
+                        <span class="label">Personal Name Card</span>
+                    </span>
+                </a>
+            </div>
+
+            <hr styles="padding:20px">
+
+            <section id="context">
+                <h2>About</h2>
+                <p>I designed a personalized name card to reflect my personality and personal brand. As a young polytechnic student, I aim to showcase my creativity and fresh ideas while 
+                    maintaining a professional image for potential employers.</p>
+            </section>
+
+            <section id="goals">
+                <h2>Goals</h2>
+                <p>The goal was to create a name card that balances professionalism with a touch of fun, aligning with my identity as an innovative and approachable individual.</p>
+            </section>
+
+            <section id="process">
+                <h2>Process</h2>
+                <p>I started by creating a moodboard to guide the design. The chosen palette incorporates serious tones (blue, grey, and black) with 
+                    complementary fun elements (yellow and orange). This combination achieves a minimalist design that is professional yet lively.</p>
+                <p>To ensure clarity and readability, I used the Inter font for its clean and modern appearance, avoiding extra embellishments on the 
+                    lettering. I also focused on making the card easy to print while maintaining visual appeal.</p>
+                <div>
+                    <img style="height:450px; width:700px" src="/images/pDesign5c.png" alt="Design Project 5">
+                </div>
+                <p>Next, I sketched up potential designs for the name card (toggle through the dropdown below!):</p>
+
+                <button class="accordion">Sketch 1</button>
+                <div class="panel">
+                    <img src="images/pDesign5_1.png" alt="Sketch 1">
+                    <p>I tried to achieve balance with the back of the card by arranging my details from top right to center left and bottom right we have the logo 
+                        again. I also made use the spacing between the components to categorize the contact details away from the main name and designation for a more organized look.</p>
+                </div>
+
+                <button class="accordion">Sketch 2</button>
+                <div class="panel">
+                    <img src="images/pDesign5_2.png" alt="Sketch 1">
+                    <p>I have included an element of programming in the card, which is the brackets (at the front and back of the card), to represent the beginning and end 
+                        of the card. This is to show continuity that there is still more to see behind the card. I have placed the name at the top to show emphasis that this card belongs to me.</p>
+                </div>
+
+                <button class="accordion">Sketch 3</button>
+                <div class="panel">
+                    <img src="images/pDesign5_3.png" alt="Sketch 1">
+                    <p>I introduced a new shape (circle), to add an element of fun into the name card. The principle of similarity is achieved by the placement of the circles, overall forming the 
+                        edges of a square. The other two circles are continued to the back of the card. I have compacted all details below each other in sequence to keep it simple and 
+                        arranged the more important details at the top and so on.</p>
+                </div>
+
+                <p>Overall, I chose Sketch 3 because it has more personality and better represents my style.</p>
+
+            </section>
+
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                });
+                }
+            </script>
+
+            <section id="challenges">
+                <h2>Challenges</h2>
+                <p>A key challenge was integrating the cloud element of the logo with the word "nur." I experimented with Illustrator’s wrapping function and eventually 
+                    achieved a design that felt cohesive and visually pleasing.</p>
+                <div>
+                    <img style="height:450px; width:700px" src="/images/pDesign5b.png" alt="Design Project 5">
+                </div>
+            </section>
+
+            <section id="results">
+                <h2>Results</h2>
+                <p>For the front of the card, I used a crème background to provide a neutral yet warm base, allowing the moodboard colors to stand out. The placement of diagonal 
+                    circular elements emphasizes the logo and directs attention to the center, where the essential details are displayed.</p>
+                <p>The back of the card features a dark blue background that mirrors the inner color of the logo’s cloud. To maintain consistency, I used the same crème tone for the text 
+                    as the front background. This cohesive design ties both sides of the card together, creating a unified and polished look that aligns with my personal branding.</p>
+                <div>
+                    <img style="height:350px; width:850px" src="/images/pDesign5a.png" alt="Design Project 5">
+                </div>
+            </section>
+        </div>
+    </div>
+
     <div class="cursor"></div>
 
     <script type="text/javascript">
@@ -183,113 +174,5 @@
         });
     </script>
 
-    <ul>
-        <li><a href="#context">About Case Scenario</a></li>
-        <li><a href="#goals">Goals</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#challenges">Challenges</a></li>
-        <li><a href="#results">Results</a></li>
-    </ul>
-
-    <div class="content">
-
-        <div class="stickyHeader">
-            <h1>
-                <a href="index.HTML#projects">
-                    <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
-                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
-                        </svg>
-                    </span>
-                </a>
-                Personal Name Card
-            </h1>
-        </div>
-
-        <section id="context">
-            <h2>About</h2>
-            <p>I designed a personalized name card to reflect my personality and personal brand. As a young polytechnic student, I aim to showcase my creativity and fresh ideas while 
-                maintaining a professional image for potential employers.</p>
-        </section>
-
-        <section id="goals">
-            <h2>Goals</h2>
-            <p>The goal was to create a name card that balances professionalism with a touch of fun, aligning with my identity as an innovative and approachable individual.</p>
-        </section>
-
-        <section id="process">
-            <h2>Process</h2>
-            <p>I started by creating a moodboard to guide the design. The chosen palette incorporates serious tones (blue, grey, and black) with 
-                complementary fun elements (yellow and orange). This combination achieves a minimalist design that is professional yet lively.</p>
-            <p>To ensure clarity and readability, I used the Inter font for its clean and modern appearance, avoiding extra embellishments on the 
-                lettering. I also focused on making the card easy to print while maintaining visual appeal.</p>
-            <div>
-                <img style="height:450px; width:700px" src="/images/pDesign5c.png" alt="Design Project 5">
-            </div>
-            <p>Next, I sketched up potential designs for the name card (toggle through the dropdown below!):</p>
-
-            <button class="accordion">Sketch 1</button>
-            <div class="panel">
-                <img src="images/pDesign5_1.png" alt="Sketch 1">
-                <p>I tried to achieve balance with the back of the card by arranging my details from top right to center left and bottom right we have the logo 
-                    again. I also made use the spacing between the components to categorize the contact details away from the main name and designation for a more organized look.</p>
-            </div>
-
-            <button class="accordion">Sketch 2</button>
-            <div class="panel">
-                <img src="images/pDesign5_2.png" alt="Sketch 1">
-                <p>I have included an element of programming in the card, which is the brackets (at the front and back of the card), to represent the beginning and end 
-                    of the card. This is to show continuity that there is still more to see behind the card. I have placed the name at the top to show emphasis that this card belongs to me.</p>
-            </div>
-
-            <button class="accordion">Sketch 3</button>
-            <div class="panel">
-                <img src="images/pDesign5_3.png" alt="Sketch 1">
-                <p>I introduced a new shape (circle), to add an element of fun into the name card. The principle of similarity is achieved by the placement of the circles, overall forming the 
-                    edges of a square. The other two circles are continued to the back of the card. I have compacted all details below each other in sequence to keep it simple and 
-                    arranged the more important details at the top and so on.</p>
-            </div>
-
-            <p>Overall, I chose Sketch 3 because it has more personality and better represents my style.</p>
-
-        </section>
-
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                } 
-              });
-            }
-        </script>
-
-        <section id="challenges">
-            <h2>Challenges</h2>
-            <p>A key challenge was integrating the cloud element of the logo with the word "nur." I experimented with Illustrator’s wrapping function and eventually 
-                achieved a design that felt cohesive and visually pleasing.</p>
-            <div>
-                <img style="height:450px; width:700px" src="/images/pDesign5b.png" alt="Design Project 5">
-            </div>
-        </section>
-
-        <section id="results">
-            <h2>Results</h2>
-            <p>For the front of the card, I used a crème background to provide a neutral yet warm base, allowing the moodboard colors to stand out. The placement of diagonal 
-                circular elements emphasizes the logo and directs attention to the center, where the essential details are displayed.</p>
-            <p>The back of the card features a dark blue background that mirrors the inner color of the logo’s cloud. To maintain consistency, I used the same crème tone for the text 
-                as the front background. This cohesive design ties both sides of the card together, creating a unified and polished look that aligns with my personal branding.</p>
-            <div>
-                <img style="height:350px; width:850px" src="/images/pDesign5a.png" alt="Design Project 5">
-            </div>
-        </section>
-    </div>
 </body>
 </html>

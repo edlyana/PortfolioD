@@ -4,169 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma</title>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 10;
-            padding: 20px;
-            width: 15%;
-            /* background-color: #FCF6E7; */
-            position: fixed;
-            height: 100%;
-            overflow: auto;
-        }
-
-        li a {
-            display: block;
-            color: #000;
-            padding: 16px 16px;
-            text-decoration: none;
-            font-size: 1.15rem;
-        }
-
-        li a.active {
-            background-color: #f38c1f;
-            color: white;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #fcb161;
-            color: white;
-        }
-
-/* Main Content */
-        .content {
-            flex-grow: 1;
-            padding: 40px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .content section {
-            margin-bottom: 40px;
-            /* opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease; */
-        }
-
-        /* .content section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        } */
-
-        .content p {
-            /* font-size: 1.5rem; */
-            font-family: 'Inter', sans-serif;
-            font-size: 20px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            padding-left: 4%;
-        }
-
-        section img{
-            padding-left: 4%;
-        }
-
-        svg {
-            height: 33px;
-            width: 33px;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            font-size: 9px;
-        }
-
-        h2 {
-            font-family: 'Pacifico', serif;
-            font-size: 31px;
-        }
-
-        img {
-            align-content: center;
-            height:550px;
-            width:750px;
-        }
-
-        .stickyHeader {
-            position: sticky;
-            top: 0;
-            padding: 10px 16px;
-            background: #e2dcbd;
-            color: #000000;
-            opacity: 0.9;
-            z-index: 999;
-        }
-
-        /* The dots/bullets/indicators */
-        .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-        }
-
-        .active, .dot:hover {
-        background-color: #717171;
-        }
-
-        /* Fading animation */
-        .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-        }
-
-        .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-        }
-
-        /* Caption text */
-        .text {
-        color: #000000;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-        background-color: rgba(243, 140, 31, 0.5);
-        }
-
-        /* cursor */
-        .cursor{
-            z-index: 1000;
-            position: fixed;
-            background: #E54712;
-            opacity: 0.25;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            pointer-events: none;
-            box-shadow: 0 0 28px #E54712, 0 0 68px #E54712;
-            transform: translate(-50%, -50%);
-            display: none;
-        }
-
-        body{
-            cursor: none;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="projectStyles.css">
 </head>
-<body style="background-color: #FCF6E7;">
+<body>
+    <div class="container">
+        <ul class="item">
+            <li><a href="#context">About Case Scenario</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#results">Results</a></li>
+        </ul>
 
-    <!-- CURSOR -->
+        <div class="item">
+            <div class="stickyHeader">
+                <a href="index.HTML#projects" class="backLink">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                        </svg>
+                        <span class="label">GivingFoodies Mobile Wireframe</span>
+                    </span>
+                </a>
+            </div>
+
+            <hr styles="padding:20px">
+
+            <section id="context">
+                <h2>About</h2>
+                <p>The app aims to bridge the gap between food surplus and food insecurity in Singapore by connecting dealers with those in need. Users can easily list the surplus food (e.g. from their household, restaurants, or supermarkets) while other users can browse and claim available items in real-time. </p>
+                <div>
+                    <img style="height:550px; width:650px" src="/images/pDesign3a.png" alt="Design Project 3">
+                </div>
+            </section>
+
+            <section id="goals">
+                <h2>Goals</h2>
+                <p>The product goal for this project is "To improve the accessibility of food/beverages and or leftover foods for those in need around the community". In addition, I wanted the app to be inclusive and cater to everyone in the community. To achieve this, I focused on creating a user-friendly interface that is intuitive and accessible to a wide range of users.</p>
+            </section>
+
+            <section id="process">
+                <h2>Process</h2>
+                <p>To design my app, I began with UI research and competitor analysis to assess the strengths and weaknesses of existing solutions. In the first slideshow, I highlighted two popular apps used in Singapore for recycling food and identified areas for improvement. Next, I created User Personas to better understand the (type of) target audience. Lastly, using a sitemap, I was able to visualize the app’s layout and potential pages, which helped clarify the structure and user flow.</p>
+                
+                <!-- SLIDESHOW -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="/images/pDesign3g.png" alt="Slide 1">
+                        <div class="text">Competitor Analysis</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/images/pDesign3b.png" alt="Slide 2">
+                        <div class="text">User Persona example</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/images/pDesign3c.png" alt="Slide 3">
+                        <div class="text">Sitemap</div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    }
+                </script>
+
+            </section>
+
+            <section id="challenges">
+                <h2>Challenges</h2>
+                <p>One challenge I encountered was implementing interactions in the wireframe. It was my first time using Figma’s Open Overlay function to display pop-ups after successful actions. Initially, I duplicated pages to add pop-ups, but I later discovered that overlays were a more efficient method. This approach streamlined the wireframe and reduced repetition.</p>
+                <p>Another challenge was using variables and conditionals to enhance the app experience. It required careful planning to determine where and how to apply them effectively. I reference YouTube tutorials to better understand the conditional function, which ultimately allowed me to create a more dynamic and engaging user experience.</p>
+                <div>
+                    <img style="height:450px; width:700px" src="/images/pDesign3d.png" alt="Design Project 3">
+                </div>
+            </section>
+
+            <section id="results">
+                <h2>Results</h2>
+                <p>In the end, I was able to deliver a user-friendly application for users in the community. This could potentilally reduce food wastage and enforces a sharing culture amongst individuals and businesses to contribute to a zero-waste future while helping to feed those vulnerable in the community. 
+                    You can find the link to my low-fidelity <a href="https://www.figma.com/design/nAh441VS2cTVuntEy6umgM/Giving-Foodies-Low-fidelity-Wireframe?node-id=0-1&t=ornMAT6hhswhr4XQ-1">here</a> and high-fidelity <a href="https://www.figma.com/design/gnRhzKbyzAbsyOtyI3B0kB/Giving-Foodies-High-fidelity-Wireframe-(1)?node-id=0-1&t=8fpCdHPu9voqhoev-1">here</a> for viewing.</p>
+                <img style="height:450px; width:700px" src="/images/pDesign3f.png" alt="Design Project 3">
+                
+                <div>
+                    <p>Watch my high-fidelity demo below:</p>
+                    <video width="750" height="500" controls>
+                        <source src="videos/pDesign3_demo_vid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </div>
+    </div>
+
     <div class="cursor"></div>
 
     <script type="text/javascript">
@@ -193,124 +154,5 @@
         });
     </script>
 
-    <ul>
-        <li><a href="#context">About Case Scenario</a></li>
-        <li><a href="#goals">Goals</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#challenges">Challenges</a></li>
-        <li><a href="#results">Results</a></li>
-    </ul>
-
-    <div class="content">
-
-        <section class="stickyHeader">
-            <h1>
-                <a href="index.HTML#projects">
-                    <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
-                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
-                        </svg>
-                    </span>
-                </a>
-                GivingFoodies Mobile Wireframe
-            </h1>
-        </section>
-
-        <section id="context">
-            <h2>About</h2>
-            <p>The app aims to bridge the gap between food surplus and food insecurity in Singapore by connecting dealers with those in need. Users can easily list the surplus food (e.g. from their household, restaurants, or supermarkets) while other users can browse and claim available items in real-time. </p>
-            <div>
-                <img style="height:550px; width:650px" src="/images/pDesign3a.png" alt="Design Project 3">
-            </div>
-        </section>
-
-        <section id="goals">
-            <h2>Goals</h2>
-            <p>The product goal for this project is "To improve the accessibility of food/beverages and or leftover foods for those in need around the community". In addition, I wanted the app to be inclusive and cater to everyone in the community. To achieve this, I focused on creating a user-friendly interface that is intuitive and accessible to a wide range of users.</p>
-        </section>
-
-        <section id="process">
-            <h2>Process</h2>
-            <p>To design my app, I began with UI research and competitor analysis to assess the strengths and weaknesses of existing solutions. In the first slideshow, I highlighted two popular apps used in Singapore for recycling food and identified areas for improvement. Next, I created User Personas to better understand the (type of) target audience. Lastly, using a sitemap, I was able to visualize the app’s layout and potential pages, which helped clarify the structure and user flow.</p>
-            
-            <!-- SLIDESHOW -->
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="/images/pDesign3g.png" alt="Slide 1">
-                    <div class="text">Competitor Analysis</div>
-                </div>
-                <div class="mySlides fade">
-                    <img src="/images/pDesign3b.png" alt="Slide 2">
-                    <div class="text">User Persona example</div>
-                </div>
-                <div class="mySlides fade">
-                    <img src="/images/pDesign3c.png" alt="Slide 3">
-                    <div class="text">Sitemap</div>
-                </div>
-            </div>
-
-            <br>
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-
-            <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
-                
-                function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                }
-                
-                function currentSlide(n) {
-                  showSlides(slideIndex = n);
-                }
-                
-                function showSlides(n) {
-                  var i;
-                  var slides = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("dot");
-                  if (n > slides.length) {slideIndex = 1}    
-                  if (n < 1) {slideIndex = slides.length}
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active";
-                }
-            </script>
-
-        </section>
-
-        <section id="challenges">
-            <h2>Challenges</h2>
-            <p>One challenge I encountered was implementing interactions in the wireframe. It was my first time using Figma’s Open Overlay function to display pop-ups after successful actions. Initially, I duplicated pages to add pop-ups, but I later discovered that overlays were a more efficient method. This approach streamlined the wireframe and reduced repetition.</p>
-            <p>Another challenge was using variables and conditionals to enhance the app experience. It required careful planning to determine where and how to apply them effectively. I reference YouTube tutorials to better understand the conditional function, which ultimately allowed me to create a more dynamic and engaging user experience.</p>
-            <div>
-                <img style="height:450px; width:700px" src="/images/pDesign3d.png" alt="Design Project 3">
-            </div>
-        </section>
-
-        <section id="results">
-            <h2>Results</h2>
-            <p>In the end, I was able to deliver a user-friendly application for users in the community. This could potentilally reduce food wastage and enforces a sharing culture amongst individuals and businesses to contribute to a zero-waste future while helping to feed those vulnerable in the community. 
-                You can find the link to my low-fidelity <a href="https://www.figma.com/design/nAh441VS2cTVuntEy6umgM/Giving-Foodies-Low-fidelity-Wireframe?node-id=0-1&t=ornMAT6hhswhr4XQ-1">here</a> and high-fidelity <a href="https://www.figma.com/design/gnRhzKbyzAbsyOtyI3B0kB/Giving-Foodies-High-fidelity-Wireframe-(1)?node-id=0-1&t=8fpCdHPu9voqhoev-1">here</a> for viewing.</p>
-            <img style="height:450px; width:700px" src="/images/pDesign3f.png" alt="Design Project 3">
-            
-            <div>
-                <p>Watch my high-fidelity demo below:</p>
-                <video width="750" height="500" controls>
-                    <source src="videos/pDesign3_demo_vid.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </section>
-    </div>
 </body>
 </html>
